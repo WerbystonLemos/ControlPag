@@ -24,12 +24,5 @@ function showLoading()
 
 function hideLoading()
 {
-    /**
-     * essa funcao esta errada pelo fato da linha de cod a baixo esta OCULTANDO
-     * e nao DESTRUINDO como e o intuito 
-     * como a muie ta insistindo p ir assistir eu a patroa e as criancas vou ter 
-     * que pesquisar a solucao depois
-     * CASA TBM BESTA...E BOM...CONFIA MIZERAVI
-     */
-    document.querySelector("#containerLoading").style.display = "none"
+    document.querySelector("#containerLoading").remove()
 }
