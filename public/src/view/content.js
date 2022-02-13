@@ -253,23 +253,23 @@ function escondeMostra()
      let capital = 6000 
 
      //TOTAL
-     let inputFooterTotal = parseInt($("#footerTotal").val())
-     inputFooterTotal +=  parseInt(item.val().valorAPagar)
-     $("#footerTotal").val(inputFooterTotal)
+     let inputFooterTotal   = parseInt($("#footerTotal").html())
+     inputFooterTotal       +=  parseInt(item.val().valorAPagar)
+     $("#footerTotal").text(inputFooterTotal)
      
      // PAGO
-     let inputFooterPago = parseInt( $("#footerPago").val() )
+     let inputFooterPago = parseInt( $("#footerPago").html() )
      if ( item.val().pago == 1 )
      {
         inputFooterPago += parseInt(item.val().valorAPagar)
      }
-     $("#footerPago").val(inputFooterPago)
+     $("#footerPago").html(inputFooterPago)
      
      // RESTO
-     $("#footerResto").val(capital - inputFooterPago)
+     $("#footerResto").html(capital - inputFooterPago)
 
      // CAPITAL
-     parseInt($("#footerCapital").val(capital))
+     parseInt($("#footerCapital").html(capital))
  }
 
  /**

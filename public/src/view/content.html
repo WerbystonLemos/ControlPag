@@ -13,20 +13,19 @@
 </head>
 <body>
 
-    <div id="topBar" class="container-fluid sopver">
+    <div id="topBar" class="container-fluid">
       HEADER
     </div>
 
     <div id="containerPrincipal" class="container-fluid">
-      
       <div class="row">
+
         <div id="containerControleExibicao">
           <button id="btnEsconde" class="btn btn-primary btn-sm"><i class="btnControleExibicao bi bi-arrow-bar-left"></i></button>
           <button id="btnMostra" class="btn btn-primary btn-sm"><i class="btnControleExibicao bi bi-arrow-bar-right"></i></button>            
         </div>
 
-        <div id="aside" class="col-md-2 sopver">
-          
+        <div id="aside" class="col-md-2">
           <a href="#">
             <div class="menuItem">
               Dashboard
@@ -47,22 +46,20 @@
               Decisório
             </div>
           </a>
-
         </div>
         
         <div id="containerTabela" class="col-md-10">
-        
-          <div class="row" id="principalAcoes">
+          <div id="principalAcoes" class="row">
             
-            <div class="col-1">
+            <div class="col-md-1 col-3">
               <button id="add" onclick="mostraModalAddDivida()" class="btn btn-success btn-sm" title="Adicionar"><i class="bi bi-plus-circle"></i></button>
             </div>
             
-            <div id="escolhaPeriodo" class="col-1">
+            <div id="escolhaPeriodo" class="col-md-1 col-3">
               <label class="form-label" title="Escolha o Período">Período</label>
             </div>
 
-            <div class="col-2">
+            <div class="col-md-2 col-3">
               <select id="selecionaMes" class="form-select" onchange="filtraDividas()">
                 <option value="1">Janeiro</option>
                 <option value="2">Fevereiro</option>
@@ -79,10 +76,11 @@
               </select>
             </div>
 
-            <div class="col-2">
+            <div class="col-md-2 col-3">
               <select id="selecionaAno" class="form-select" onchange="filtraDividas()">
               </select>
             </div>
+
           </div>
           
           <div id="principal" data-spy="scroll">
@@ -109,35 +107,41 @@
           </div>
           
         </div>
-      </div>
 
+      </div>
     </div>
 
-    <footer id="footer" class="container-fluid sopver">
-      <div class="footer row" id="footerResume">
+    <div id="footer" class="">
+      <div class="container-fluid">
+        <div id="footerResume" class="row">
+          
+          <div class="col-md-3">
+            <label><b>Capital:</b> R$
+              <span id="footerCapital" type="text" value="0" disabled>0</span>
+            </label>
+          </div>
 
-        <div class="col-3">
-          <label>Capital:</label>
-          <input id="footerCapital" type="text" value="0" disabled>
-        </div>
+          <div class="col-md-3">
+            <label><b>Resto:</b> R$
+              <span id="footerResto" type="text" value="0" disabled>0</span>
+            </label>
+          </div>
 
-        <div class="col-3">
-          <label>Resto:</label>
-          <input id="footerResto" type="text" value="0" disabled>
+          <div class="col-md-3">
+            <label><b>Pago:</b> R$
+              <span id="footerPago" type="text" value="0" disabled>0</span>
+            </label>
+          </div>
+          
+          <div class="col-md-3">
+            <label><b>Total:</b> R$
+              <span id="footerTotal" type="text" value="0" disabled>0</span>
+            </label>
+          </div>
+          
         </div>
-
-        <div class="col-3">
-          <label>Pago:</label>
-          <input id="footerPago" type="text" value="0" disabled>
-        </div>
-        
-        <div class="col-3">
-          <label>Total:</label>
-          <input id="footerTotal" type="text" value="0" disabled>
-        </div>
-        
       </div>
-    </footer>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
