@@ -1,0 +1,38 @@
+<body></body>
+<!-- <style>
+    body
+    {
+        /* background: pink; */
+        /* display: flex;
+        justify-content: center; */
+        align-items: center;
+    }
+    #containerDoodle
+    {
+        /* border: 5px solid red; */
+
+        width: 400px;
+        height: 300px;
+    }
+</style>
+
+<div class="" id="containerDoodle">
+    <img src="../../img/loading.gif" alt="">
+</div> -->
+
+<script>
+        
+        document.querySelector("body").style.display        = "flex"
+        document.querySelector("body").style.justifyContent = "center"
+        document.querySelector("body").style.alignItems     = "center"
+        // document.querySelector("body").style.background     = "red"
+        
+        let divTag = document.createElement("div")
+        let tagImg = document.createElement("img")
+        
+        tagImg.setAttribute("src", "../../img/loading.gif")
+        
+        divTag.appendChild(tagImg)
+        document.querySelector("body").appendChild(divTag)
+
+</script>

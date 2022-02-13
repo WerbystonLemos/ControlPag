@@ -1,0 +1,62 @@
+/* TOP BAR */
+#topBar
+{
+    background: royalblue;
+    height: 10vh;
+}
+/* PRINCIPAL */
+#containerPrincipal
+{
+    border: 1px solid red !important;
+
+    height: 80vh;
+}
+#containerQtdParcelas, #containerQtdParcelasEdit
+{
+    display: none;
+}
+#containerSidebarControles
+{
+    padding: 10px 5px;
+}
+#btnEsconde
+{
+    display: block;
+}
+#btnMostra
+{
+    display: none;
+}
+#aside
+{
+    height: 75vh;
+    background: royalblue;
+    padding: 0;
+}
+.menuItem
+{
+    border: 1px solid greenyellow;
+    padding: 2px 10px;
+    background-color: aquamarine;
+}
+a
+{
+    text-decoration: none;
+}
+.menuItem:hover
+{
+    padding: 2px 20px;
+    background-color: aqua;
+    font-weight: bold;
+}
+#containerTabela
+{
+    height: 80vh;
+    overflow-y: scroll;
+}
+/* FOOTER */
+#footer
+{
+    height: 10vh;
+    background: royalblue;
+}
